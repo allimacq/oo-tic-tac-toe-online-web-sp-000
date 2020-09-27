@@ -104,5 +104,24 @@ class TicTacToe
     end
   end
 
+  def won
+    if @board == [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+       false
+    end
+
+  #counting so we don't return false until we have looked at all of the combinations.
+  count = 0
+
+    WIN_COMBINATIONS.each do |combo|
+      count = count + 1
+      if @board[combo[0]] == "X" && @board[combo[1]] == "X" &&   @board[combo[2]] == "X"
+        p combo
+      elsif @board[combo[0]] == "O" && @board[combo[1]] == "O" && @board[combo[2]] == "O"
+        p combo
+      elsif count == 8
+        false
+      end
+    end
+  end
 
 end
