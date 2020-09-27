@@ -104,7 +104,7 @@ class TicTacToe
     end
   end
 
-  def won
+  def won?
     if @board == [" ", " ", " ", " ", " ", " ", " ", " ", " "]
        false
     end
