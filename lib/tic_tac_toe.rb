@@ -124,7 +124,13 @@ class TicTacToe
     end
   end
 
-
+  def full?
+    if @board.any?(" ")
+      return false
+    else
+      return true
+    end
+end
 
 
 
