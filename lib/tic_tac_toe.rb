@@ -102,7 +102,7 @@ class TicTacToe
       "Please enter 1-9:"
       input = gets
     end
-end
+  end
 
 
 end
