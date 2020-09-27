@@ -75,7 +75,7 @@ class TicTacToe
 
   #tells you whose turn it is
   def current_player
-    if turn_count(@board) % 2 == 0
+    if turn_count % 2 == 0
       p "X"
     else
       p "O"
