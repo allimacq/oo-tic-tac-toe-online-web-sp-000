@@ -73,5 +73,14 @@ class TicTacToe
     p turn
   end
 
+  #tells you whose turn it is
+  def current_player
+    if turn_count(@board) % 2 == 0
+      p "X"
+    else
+      p "O"
+    end
+  end
+
 
 end
