@@ -62,7 +62,16 @@ class TicTacToe
     end
   end
 
-
+  #returns the number of turns that have been played
+  def turn_count
+    #using the count method to count how many X's and O's are in the board array
+    x = @board.count("X")
+    o = @board.count("O")
+    #adding the X's and O's together
+    turn = x + o
+    #we want the return value to be a number, so we use return
+    p turn
+  end
 
 
 end
