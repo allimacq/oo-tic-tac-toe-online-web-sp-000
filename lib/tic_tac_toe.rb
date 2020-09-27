@@ -82,7 +82,27 @@ class TicTacToe
     end
   end
 
-
+  def turn
+    #asking the user for their input
+    puts "Please enter 1-9:"
+    #the gets method actually *gets* the user input
+    input = gets
+  
+    character = current_player
+  
+    #now calling the input_to_index method to convert the input to an integer and to the proper ruby index equivalent
+    @index = input_to_index(input)
+  
+    #if the move is valid, we make the move and display the board
+    if valid_move?(index) == true
+    move(index, character)
+    display_board
+  #otherwise, we ask for a new position
+    else
+      "Please enter 1-9:"
+      input = gets
+    end
+end
 
 
 end
