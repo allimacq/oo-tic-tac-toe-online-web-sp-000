@@ -119,7 +119,7 @@ class TicTacToe
       elsif @board[combo[0]] == "O" && @board[combo[1]] == "O" && @board[combo[2]] == "O"
         p combo
       elsif count == 8
-        p false
+        return false
       end
     end
   end
