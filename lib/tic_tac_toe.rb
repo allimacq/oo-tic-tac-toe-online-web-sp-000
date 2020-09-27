@@ -50,7 +50,17 @@ class TicTacToe
     end
   end
 
-
+  # making sure the user plays on the board
+  def valid_move?(index)
+    #this first if statement is checking if the index is on the board and if the position has been taken
+    if index.between?(0,8) && position_taken?(index) == false
+      p true
+    elsif index > 9 || index < 0
+      p false
+    elsif position_taken?(index) == true
+      p false
+    end
+  end
 
 
 
