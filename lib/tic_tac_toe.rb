@@ -177,21 +177,21 @@ class TicTacToe
     #turn(board)
     i = 0
     until over? == true
-    turn
-    if draw?(board) == true
-      break
-    elsif won?(board) != false
-      break
-    elsif i == 9
-      break
+      turn
+      if draw? == true
+        break
+      elsif won? != false
+        break
+      elsif i == 9
+        break
+      end
     end
-  end
   
-  if won?(board) != false
-    puts "Congratulations #{winner(board)}!"
-    elsif draw?(board) == true
+    if won? != false
+      puts "Congratulations #{winner}!"
+    elsif draw? == true
       puts "Cat's Game!"
-  end
+    end
 end
 
 end
