@@ -170,5 +170,28 @@ class TicTacToe
       return "O"
     end
   end
+  
+  
+  #this play method works in irb
+  def play
+    #turn(board)
+    i = 0
+  until over?(board) == true
+    turn(board)
+    if draw?(board) == true
+      break
+    elsif won?(board) != false
+      break
+    elsif i == 9
+      break
+    end
+  end
+  
+  if won?(board) != false
+    puts "Congratulations #{winner(board)}!"
+    elsif draw?(board) == true
+      puts "Cat's Game!"
+  end
+end
 
 end
