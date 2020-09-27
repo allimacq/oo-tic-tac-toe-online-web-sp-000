@@ -141,7 +141,20 @@ class TicTacToe
   end
   
   def over?
-    
+     #board that has been won and the board is NOT full --> true
+    if won? != false && full? == false
+      return true
+    #board that has been won and the board is full --> true
+    elsif won? != false && full? == true
+      return true
+    #board that is still in-progress --> false
+    elsif won? == false && full? == false
+      return false
+    #board that's a draw --> true
+    elsif draw? == true
+      return true
+    end
+  end
   
 
 end
