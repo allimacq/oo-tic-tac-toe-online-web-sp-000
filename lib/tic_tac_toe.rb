@@ -30,7 +30,10 @@ class TicTacToe
     puts row_three
   end
 
-
+  
+  def input_to_index
+    
+  end
 
 
 
