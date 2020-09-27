@@ -176,8 +176,8 @@ class TicTacToe
   def play
     #turn(board)
     i = 0
-  until over?(board) == true
-    turn(board)
+    until over? == true
+    turn
     if draw?(board) == true
       break
     elsif won?(board) != false
