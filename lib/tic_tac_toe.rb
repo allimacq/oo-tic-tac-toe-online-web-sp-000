@@ -115,9 +115,9 @@ class TicTacToe
     WIN_COMBINATIONS.each do |combo|
       count = count + 1
       if @board[combo[0]] == "X" && @board[combo[1]] == "X" &&   @board[combo[2]] == "X"
-        p combo
+        return combo
       elsif @board[combo[0]] == "O" && @board[combo[1]] == "O" && @board[combo[2]] == "O"
-        p combo
+        return combo
       elsif count == 8
         return false
       end
