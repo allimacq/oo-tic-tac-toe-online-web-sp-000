@@ -156,5 +156,19 @@ class TicTacToe
     end
   end
   
+  #method to determine the winner and returns the winning token
+  def winner
+    #setting the index of the win into a variable, win
+    win = won?
+    #now returning nil if there is no winner
+    if won? == false
+      return nil
+    #all indexes should have the same token for a win, so we're only checking the first
+    elsif @board[win[0]] == "X" && won? != false
+      return "X"
+    elsif @board[win[0]] == "O" && won? != false
+      return "O"
+    end
+  end
 
 end
